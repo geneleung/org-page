@@ -124,12 +124,13 @@ files, committed by org-page.")
         (if (not remote-repos)
             (message "No valid remote repository found.")
           (let (repo)
-            (if (> (length remote-repos) 1)
-                (setq repo (read-string
-                            (format "Which repo to push %s: "
-                                    (prin1-to-string remote-repos))
-                            (car remote-repos)))
-              (setq repo (car remote-repos)))
+            ;; (if (> (length remote-repos) 1)
+            ;;     (setq repo (read-string
+            ;;                 (format "Which repo to push %s: "
+            ;;                         (prin1-to-string remote-repos))
+            ;;                 (car remote-repos)))
+            ;;   (setq repo (car remote-repos)))
+	    (setq repo deploy-remote-repo)
             (if (not (member repo remote-repos))
                 (message "Invalid remote repository '%s'." repo)
               (op/git-push-remote op/repository-directory
