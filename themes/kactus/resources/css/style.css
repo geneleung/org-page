@@ -139,15 +139,15 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
+  padding: 60px 0px 100px 0px;
 }
 
 #wrapper.home {
-	max-width: 600px;
+	max-width: 640px;
 	margin: 0 auto;
-	padding: 0px 40px 20px 40px;
+	padding: 0px 0px 20px 0px;
 }
 
 .home #avatar {

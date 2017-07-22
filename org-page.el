@@ -270,12 +270,13 @@ month and day): " (unless (string= i "")
            (if (string= title "") (buffer-name) title)
            (user-full-name)
            user-mail-address
-           (format-time-string (substring (car org-time-stamp-formats) 1 -1))
+           ;;(format-time-string (substring (car org-time-stamp-formats) 1 -1))
+           (format-time-string "%Y-%m-%d %H:%M %Z %s")
            (if (string= uri "") "<TODO: insert your uri here>" uri)
            (if (string= keywords "")
-               "<TODO: insert your keywords here>"
+               "chappie"
              keywords)
-           (if (string= tags "") "<TODO: insert your tags here>" tags)
+           (if (string= tags "") "notes" tags)
            org-export-default-language
            org-export-headline-levels
            nil ;; org-export-with-section-numbers
