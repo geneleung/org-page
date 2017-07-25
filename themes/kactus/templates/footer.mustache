@@ -6,7 +6,21 @@
         <span title="tags" class="post-info">{{{tag-links}}}</span>
       </div>
       {{/show-meta}}
+<footer id="post-meta" class="clearfix">
+    <a>
+        <img class="avatar" src="/media/images/logo.jpg">
+        <div>
+            <span class="dark">Chappie</span>
+            <span>Software engineer</span>
+        </div>
+    </a>
 
+    <section id="sharing">
+      <a class="facebook" href="mailto:liangzhen.me@gmail.com">
+	<span>联系我</span>
+</a>
+    </section>
+</footer>
       <script src="http://code.jquery.com/jquery-latest.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -25,7 +39,7 @@
       <div align="center">
       <footer id="footer">
         <p class="small">
-          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:{{email}}">{{author}}</a>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:liangzhen.me@gmail.com">{{author}}</a>
           &nbsp;&nbsp;-&nbsp;&nbsp;
           Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
           <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
